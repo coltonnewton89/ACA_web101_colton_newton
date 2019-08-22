@@ -1,5 +1,5 @@
 function myFunction() {
-  var gameMarker = "";
+  var gameMarker = "x";
 }
 
 function changeMarkerToX() {
@@ -12,4 +12,6 @@ function changeMarkerToO() {
   console.log("The o button was clicked!");
 }
 
-function placeMark() {}
+function placeMark() {
+  console.log("placemark active");
+}
