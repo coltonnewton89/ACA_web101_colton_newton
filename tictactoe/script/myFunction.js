@@ -1,17 +1,16 @@
-function myFunction() {
-  var gameMarker = "x";
-}
+var gameMarker = "X";
 
 function changeMarkerToX() {
-  var gameMarker = "X";
+  gameMarker = "X";
   console.log("The x button was clicked!");
 }
 
 function changeMarkerToO() {
-  var gameMarker = "O";
+  gameMarker = "O";
   console.log("The o button was clicked!");
 }
 
 function placeMark() {
-  console.log("placemark active");
+  document.getElementsByTagName("div").innerHTML = gameMarker;
+  console.log(gameMarker);
 }
