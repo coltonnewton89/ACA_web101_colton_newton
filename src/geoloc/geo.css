@@ -1,0 +1,33 @@
+.c {
+  position: relative;
+  width: 1080px;
+  height: 772px;
+  background-image: url(../geoloc/imgs/mainbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button {
+  position: absolute;
+  margin-top: 525px;
+  margin-left: 255px;
+  height: 30px;
+  width: 15px;
+  background-color: red;
+}
+
+#demo {
+  position: absolute;
+  margin-top: 460px;
+  margin-left: 300px;
+  font-size: 15px;
+  width: 200px;
+  height: 150px;
+}
+
+#help {
+  position: absolute;
+  margin-top: 580px;
+  margin-left: 625px;
+  font-size: 40px;
+}
