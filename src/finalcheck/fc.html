@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../finalcheck/fc.css" />
+    <script src="../finalcheck/fc.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      //setting up a new variable into the dom
+      var audioElement = document.createElement("audio");
+      //linking hitom audio to that element
+      audioElement.setAttribute("src", "../crash/sounds/hihato.wav");
+      //the dom will find the src audio when a certain key is pressed
+      $(document).keydown(function(keyPressed) {
+        //that certain key will be declared by a keypress code
+        if (keyPressed.keyCode == 65) {
+          //when that specific key is pressed it will play srced element
+          audioElement.play();
+          //change class on keydown
+          $("#faith").addClass("blue");
+        }
+      });
+      //when a key comes up I want it to fire function keyUp
+      $(document).keyup(function(keyUp) {
+        //but I only want keyUp to fire if the specific keycode matches 65
+        if (keyUp.keyCode == 65) {
+          //this is what I want function keyUp to actually do
+          document.getElementById("faith").className = "key";
+        }
+      });
+
+      var audioElement1 = document.createElement("audio");
+      audioElement1.setAttribute("src", "../crash/sounds/hihatc.wav");
+      $(document).keydown(function(keyPressed) {
+        if (keyPressed.keyCode == 83) {
+          audioElement1.play();
+          $("#faith1").addClass("blue");
+        }
+      });
+      $(document).keyup(function(keyUp) {
+        if (keyUp.keyCode == 83) {
+          document.getElementById("faith1").className = "key";
+        }
+      });
+
+      var audioElement2 = document.createElement("audio");
+      audioElement2.setAttribute("src", "../crash/sounds/snare.wav");
+      $(document).keydown(function(keyPressed) {
+        if (keyPressed.keyCode == 68) {
+          audioElement2.play();
+          $("#faith2").addClass("blue");
+        }
+      });
+      $(document).keyup(function(keyUp) {
+        if (keyUp.keyCode == 68) {
+          document.getElementById("faith2").className = "key";
+        }
+      });
+
+      var audioElement3 = document.createElement("audio");
+      audioElement3.setAttribute("src", "../crash/sounds/crash.wav");
+      $(document).keydown(function(keyPressed) {
+        if (keyPressed.keyCode == 70) {
+          audioElement3.play();
+          $("#faith3").addClass("blue");
+        }
+      });
+      $(document).keyup(function(keyUp) {
+        if (keyUp.keyCode == 70) {
+          document.getElementById("faith3").className = "key";
+        }
+      });
+
+      var audioElement4 = document.createElement("audio");
+      audioElement4.setAttribute("src", "../crash/sounds/hitom.wav");
+      $(document).keydown(function(keyPressed) {
+        if (keyPressed.keyCode == 71) {
+          audioElement4.play();
+          $("#faith4").addClass("blue");
+        }
+      });
+      $(document).keyup(function(keyUp) {
+        if (keyUp.keyCode == 71) {
+          document.getElementById("faith4").className = "key";
+        }
+      });
+
+      var audioElement5 = document.createElement("audio");
+      audioElement5.setAttribute("src", "../crash/sounds/midtom.wav");
+      $(document).keydown(function(keyPressed) {
+        if (keyPressed.keyCode == 72) {
+          audioElement5.play();
+          $("#faith5").addClass("blue");
+        }
+      });
+      $(document).keyup(function(keyUp) {
+        if (keyUp.keyCode == 72) {
+          document.getElementById("faith5").className = "key";
+        }
+      });
+
+      var audioElement6 = document.createElement("audio");
+      audioElement6.setAttribute("src", "../crash/sounds/ride.wav");
+      $(document).keydown(function(keyPressed) {
+        if (keyPressed.keyCode == 74) {
+          audioElement6.play();
+          $("#faith6").addClass("blue");
+        }
+      });
+      $(document).keyup(function(keyUp) {
+        if (keyUp.keyCode == 74) {
+          document.getElementById("faith6").className = "key";
+        }
+      });
+
+      var audioElement7 = document.createElement("audio");
+      audioElement7.setAttribute("src", "../crash/sounds/floortom.wav");
+      $(document).keydown(function(keyPressed) {
+        if (keyPressed.keyCode == 75) {
+          audioElement7.play();
+          $("#faith7").addClass("blue");
+        }
+      });
+      $(document).keyup(function(keyUp) {
+        if (keyUp.keyCode == 75) {
+          document.getElementById("faith7").className = "key";
+        }
+      });
+
+      var audioElement8 = document.createElement("audio");
+      audioElement8.setAttribute("src", "../crash/sounds/bass.mp3");
+      $(document).keydown(function(keyPressed) {
+        if (keyPressed.keyCode == 32) {
+          audioElement8.play();
+          $("#faith8").addClass("blue");
+        }
+      });
+      $(document).keyup(function(keyUp) {
+        if (keyUp.keyCode == 32) {
+          document.getElementById("faith8").className = "key";
+        }
+      });
+    </script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="instructions">
+      <H2
+        >Press the corresponding keys to make the drums work or you can just
+        click on the buttons! This works for mobile devices too!
+      </H2>
+    </div>
+    <aside>
+      <div class="key 1" id="faith" onclick="play()">
+        A
+        <small>hat-open</small>
+      </div>
+      <div class="key 2" id="faith1" onclick="play1()">
+        S
+        <small>hat-closed</small>
+      </div>
+      <div class="key 3" id="faith2" onclick="play2()">
+        D
+        <small>snare</small>
+      </div>
+      <div class="key 4" id="faith3" onclick="play3()">
+        F
+        <small>crash</small>
+      </div>
+      <div class="key 5" id="faith4" onclick="play4()">
+        G
+        <small>hi-tom</small>
+      </div>
+      <div class="key 6" id="faith5" onclick="play5()">
+        H
+        <small>mid-tom</small>
+      </div>
+      <div class="key 7" id="faith6" onclick="play6()">
+        J
+        <small>ride</small>
+      </div>
+      <div class="key 8" id="faith7" onclick="play7()">
+        K
+        <small>floor-tom</small>
+      </div>
+      <div class="key 9" id="faith8" onclick="play8()">
+        Space
+        <small>bass</small>
+      </div>
+    </aside>
+
+    <audio src="../crash/sounds/hihato.wav" id="hato"></audio>
+    <audio src="../crash/sounds/hihatc.wav" id="hatc"></audio>
+    <audio src="../crash/sounds/snare.wav" id="snare"></audio>
+    <audio src="../crash/sounds/crash.wav" id="crash"></audio>
+    <audio src="../crash/sounds/hitom.wav" id="hit"></audio>
+    <audio src="../crash/sounds/midtom.wav" id="midt"></audio>
+    <audio src="../crash/sounds/ride.wav" id="ride"></audio>
+    <audio src="../crash/sounds/floortom.wav" id="floort"></audio>
+    <audio src="../crash/sounds/bass.mp3" id="bas"></audio>
+  </body>
+</html>

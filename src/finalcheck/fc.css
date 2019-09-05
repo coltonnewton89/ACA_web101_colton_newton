@@ -1,0 +1,63 @@
+@media (min-width: 500px) {
+  body {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: darkblue;
+  }
+
+  .instructions {
+    grid-column-start: 2;
+    height: auto;
+    width: 200px;
+    background-color: darkblue;
+    color: white;
+  }
+  h2 {
+    font-size: 15px;
+  }
+
+  aside {
+    grid-column-start: 1;
+    height: auto;
+    width: 200px;
+    background-color: darkblue;
+    border-style: solid;
+    border: 5px;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 15%;
+  }
+
+  .key {
+    margin-top: 5px;
+    background-color: darkblue;
+    height: 55px;
+    width: 55px;
+    border: 5px solid white;
+    border-radius: 4%;
+    color: white;
+  }
+
+  .blue {
+    margin-top: 5px;
+    background-color: darkblue;
+    height: 60px;
+    width: 60px;
+    border: 5px solid orange;
+    border-radius: 4%;
+    color: orange;
+  }
+}
+
+@media (max-width: 499px) {
+  .key {
+    margin-top: 3px;
+    background-color: darkblue;
+    height: 30px;
+    width: 30px;
+    border: 3px solid white;
+    border-radius: 3%;
+    color: white;
+    font-size: 10px;
+  }
+}
